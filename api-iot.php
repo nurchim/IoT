@@ -5,12 +5,12 @@
     $d = date("Y-m-d");
     $t = date("H:i:s");
     
-    if(!empty(($_POST['suhu']) && ($_POST['kelembaban'])))
+    if(!empty(($_GET['suhu']) && ($_GET['kelembaban'])))
     {
-	    $suhu = $_POST['suhu'];
-	    $kelembaban = $_POST['kelembaban'];
+	    $suhu = $_GET['suhu'];
+	    $kelembaban = $_GET['kelembaban'];
 	    
-	     $sql = "INSERT INTO data_IoT (tgl,jam,suhu,kelembaban) VALUES ('".$d."','".$t."','".$suhu."','".$kelembaban."')";
+	     $sql = "INSERT INTO data (tgl,jam,suhu,kelembaban) VALUES ('".$d."','".$t."','".$suhu."','".$kelembaban."')";
 		
 		if ($koneksi->query($sql) === TRUE) {
 		    echo "data tersimpan";
