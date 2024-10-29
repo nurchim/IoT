@@ -1,9 +1,9 @@
 <?php
-	include 'koneksi.php';
+include 'koneksi.php';
 	
-	date_default_timezone_set('Asia/Jakarta');
-    $d = date("Y-m-d");
-    $t = date("H:i:s");
+date_default_timezone_set('Asia/Jakarta');
+$d = date("Y-m-d");
+$t = date("H:i:s");
     
     if(!empty(($_GET['suhu']) && ($_GET['kelembaban'])))
     {
