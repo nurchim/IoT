@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "id17908881_udbfikom";
-$password = "IoT-udbMoving2022";
-$dbname = "id17908881_iot_latihan";
+$servername = "sql102.infinityfree.com";
+$username = "if0_37610836";
+$password = "0lL8JSMqp38t";
+$dbname = "if0_37610836_coba";
 
 $koneksi = mysqli_connect($servername, $username, $password, $dbname);
 if (!$koneksi){
